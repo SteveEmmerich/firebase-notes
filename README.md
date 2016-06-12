@@ -32,13 +32,12 @@ wt create slack.js --secret 'FIREBASE=<Firebase URL>|<Firebase secret>'
 
 ## Setup Slack
 * Create 3 custom integrations
-  * /post-it
-   * Adds a note to firebase 
- * /pull-it
-  * Gets a note by id
- * /list-it
-  * Gets the last note posted
-
+    * /post-it
+        * Adds a note to firebase 
+    * /pull-it
+        * Gets a note by id
+    * /list-it
+        * Gets the last note posted
 * Add your web task URL as the endpoint to post to. 
 
 ### Use it
