@@ -5,8 +5,7 @@ auth0 webtask for taking notes in slack.
 ## Setup Firebase
 
 * Create a firebase account
-* Create your secret token
-** Go to settings -> Database -> add secret
+* Create your secret token ** Go to settings -> Database -> add secret
 * Copy and Paste this into your rules and replace <'SECRET'> with your secret
 ```
 {
@@ -17,7 +16,7 @@ auth0 webtask for taking notes in slack.
 }
 ```
 ## Run the webtask
-* install the webtask cli
+* Install the webtask cli
 ```
 npm install -g wt-cli
 ```
@@ -33,12 +32,12 @@ wt create slack.js --secret 'FIREBASE=<Firebase URL>|<Firebase secret>'
 
 ## Setup Slack
 * Create 3 custom integrations
-** /post-it
-*** Adds a note to firebase 
-** /pull-it
-*** Gets a note by id
-** /list-it
-*** Gets the last note posted
+..* /post-it
+...* Adds a note to firebase 
+..* /pull-it
+...* Gets a note by id
+..* /list-it
+...* Gets the last note posted
 
 * Add your web task URL as the endpoint to post to. 
 

@@ -2,14 +2,6 @@
 "use latest";
 const Firebase = require('firebase');
 
-/*const config = {
-    apiKey: "AIzaSyBfczXSPA7yzEbyispkiBSoR1M7WF-CM1I",
-    authDomain: "notes-9622b.firebaseapp.com",
-    databaseURL: "https://notes-9622b.firebaseio.com",
-    storageBucket: "notes-9622b.appspot.com",
-  };
-  firebase.initializeApp(config);*/
-
 module.exports = function (ctx, req, res)
 {
     function genResponse(code, data)
@@ -63,5 +55,5 @@ module.exports = function (ctx, req, res)
                 genResponse(500, 'Command not found');
             }
         }  
-    })
+    });
 }
